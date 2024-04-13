@@ -16,27 +16,31 @@ int main(){
     inicio:;
     do{
         x=1;
-        cout<<"Ingresar numero de legajo: \n";
+        suma=0;
+        cout<<"\nIngresar numero de legajo: \n";
         cin>>legajo;
+        if (legajo==0){
+            cout<<"\nFin\n";
+            break;
+        }
         while(x<=4){
-            x++;
-            cout<<"Ingresar nota: ";
+        cout<<"\nIngresar nota: \n";
             cin>>nota;
             if (nota>=0 && nota<=10){
                 suma += nota;
+                x++;
                 }
             else{
-                cout<<"Error, intente nuevamente \n";
+                cout<<"\nError, intente nuevamente\n";
                 goto inicio;
                 }
             }
         promedio=suma/4;
+        if (promedio>=7){
+        cout<<"\nLegajo: "<<legajo<<"\nPromedio: "<<promedio<<endl;}
         }
 
-    while(legajo!=0);{
-        if (promedio>=7){
-        cout<<"Legajo: "<<legajo<<"\n Promedio: "<<promedio;
-    }}
+    while(legajo!=0);
     getche();
     return 0;
 }
