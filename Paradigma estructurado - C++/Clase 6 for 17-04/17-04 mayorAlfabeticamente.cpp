@@ -8,11 +8,11 @@ using namespace std;
 char letra, mayor;
 
 int main(){
-    inicio:;
     for(int i=1; i<=10; i++){
-        cout<<"\n Ingrese una letra: \n";
+        inicio:;
+        cout<<endl<<i<<" Ingrese una letra: \n";
         cin>>letra;
-        if (isalpha){
+        if (isalpha(letra)){
             if (letra>mayor){
                 mayor=letra;
             }

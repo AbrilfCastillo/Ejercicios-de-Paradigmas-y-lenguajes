@@ -9,7 +9,6 @@ using namespace std;
 int valorX, valorY, sumaX, sumaY;
 
 int main(){
-    inicio:;
     for(int i=1; i<=50; i++){
         cout<<"Ingrese el valor de X: \n";
         cin>>valorX;
@@ -20,7 +19,6 @@ int main(){
     }
     cout<<"Suma de todas las X: "<<sumaX<<endl;
     cout<<"Suma de todas las Y: "<<sumaY<<endl;
-    goto inicio;
     getche();
     return 0;
 }
