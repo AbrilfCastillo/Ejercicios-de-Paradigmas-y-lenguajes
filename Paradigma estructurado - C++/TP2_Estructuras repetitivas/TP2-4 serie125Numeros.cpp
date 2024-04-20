@@ -10,7 +10,7 @@ using namespace std;
 int num, menor43, igual50, mayor70, resto;
 
 int main(){
-    for(int i=0;i<=5;i++)
+    for(int i=0;i<=125;i++)
     {
         cout<<"\nIngrese un numero: \n";
         cin>>num;
