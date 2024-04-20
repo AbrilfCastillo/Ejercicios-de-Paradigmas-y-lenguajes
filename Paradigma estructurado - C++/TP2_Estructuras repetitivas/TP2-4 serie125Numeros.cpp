@@ -8,10 +8,9 @@
 using namespace std;
 
 int num, menor43, igual50, mayor70, resto;
-char parOImpar;
 
 int main(){
-    for(int i=0;i<=125;i++)
+    for(int i=0;i<=5;i++)
     {
         cout<<"\nIngrese un numero: \n";
         cin>>num;
@@ -26,7 +25,7 @@ int main(){
             if(num==50){
                 igual50++;
             }
-            if(num<70){
+            else if(num>70){
                 mayor70++;
             }
         }
